@@ -65,7 +65,7 @@ final class CacheParserTest extends TestCase
     {
         yield [new ArrayAdapter()]; // Symfony Cache
         yield [
-            new class() implements Psr6Cache {
+            new class implements Psr6Cache {
                 private ArrayAdapter $c;
 
                 public function __construct()
